@@ -1,0 +1,19 @@
+let objeto = {
+    nombre : "Nicolas",
+    apellido : "Morales",
+    dni : 37234793,
+    mail : "nico@gmail.com"
+  }
+  
+  
+  const obtenerValorPropiedad = (objeto, propiedad1, propiedad2) => {
+    // Recibe un objeto y el nombre de una propiedad.
+    // Devuelve el valor de esta propiedad.
+    // Tu código:
+    const a = [`nombre: ${objeto[propiedad1]}`, `documento: ${objeto[propiedad2]}`]
+  
+    return a;
+  };
+  
+  console.log(obtenerValorPropiedad(objeto, "nombre", "dni"))
+  
