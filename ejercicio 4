@@ -1,0 +1,17 @@
+let persona = {
+    nombre : "Nicolas",
+    apellido : "Morales",
+    dni : 37234793,
+    mail : "nico@gmail.com"
+  }
+  
+  function verificarPropiedad(objeto, propiedad) {
+    // Verifica si el objeto posee la propiedad recibida.
+    // Retorna true si la tiene, sino retorna false.
+    // PISTA: puedes usar el método hasOwnProperty().
+    // Tu código:
+    return objeto.hasOwnProperty(propiedad)
+ }
+
+ console.log(verificarPropiedad(persona, "direccion"))    // false
+ console.log(verificarPropiedad(persona, "dni"))          // true
