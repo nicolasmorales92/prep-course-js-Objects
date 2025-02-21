@@ -1,0 +1,17 @@
+let objeto = {
+    nombre : "Nicolas",
+    apellido : "Morales",
+    dni : 37234793,
+    mail : "nico@gmail.com"
+  }
+  
+
+  const agregarNuevaPropiedad = (objeto, propiedad, valor) => {
+    // Añade una nueva propiedad al objeto con su respectivo valor pasado por la función.
+    // Tu código:
+    return objeto[propiedad] = valor
+  };
+  
+
+agregarNuevaPropiedad(objeto, "direccion" , "saenz peña 1245")
+console.log(objeto)
