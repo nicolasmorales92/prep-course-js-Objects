@@ -1,0 +1,17 @@
+let persona = {
+    nombre : "Nicolas",
+    apellido : "Morales",
+    dni : 37234793,
+    mail : "nico@gmail.com"
+  }
+  
+  const contarPropiedades = (objeto) => {
+    // Cuenta y retorna el total de propiedades que tiene el objeto.
+    // PISTA: Puedes iterarlo usando el bucle for-in.
+    // Tu código:
+    for(i in objeto){
+     return Object.keys(objeto).length
+    }
+  };
+
+  console.log(contarPropiedades(persona))
