@@ -1,0 +1,27 @@
+let productos = [
+  {producto: "tv",
+    cantidad: 5,
+    precio: 450000
+  },
+  {producto: "heladera",
+    cantidad: 4,
+    precio: 550000
+  },
+  {
+    producto: "microondas",
+    cantidad: 6,
+    precio: 300000
+  },
+  {
+    producto: "equipo de música",
+    cantidad: 11,
+    precio: 340000
+  }
+]
+  
+  function sort(sortBy, list) {
+
+    return list.sort((a, b) => a[sortBy] - b[sortBy])
+ }
+ 
+ console.log(sort("cantidad", productos))
