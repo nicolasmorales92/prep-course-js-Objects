@@ -1,0 +1,19 @@
+let persona = {
+  nombre: "Nicolas",
+  apellido: "Morales",
+  dni: 37234793,
+  mail: "nico@gmail.com"
+};
+
+function tieneEmail(objetoUsuario) {
+  // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
+  // En ese caso, retorna true. Caso contrario, false.
+  // Tu código:
+  if(objetoUsuario.hasOwnProperty("mail")){
+    return true
+  }
+  else {
+    return false
+  }
+}
+console.log(tieneEmail(persona))
