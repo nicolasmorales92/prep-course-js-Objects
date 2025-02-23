@@ -1,0 +1,18 @@
+let persona = {
+  nombre: "Nicolas",
+  apellido: "Morales",
+  dni: 37234793,
+  mail: "nico@gmail.com"
+};
+
+function eliminarPropiedad(objeto, propiedad) {
+  if (objeto.hasOwnProperty(propiedad)) { // Verifica si la propiedad existe
+    console.log(`Propiedad eliminada: ${propiedad}, Valor: ${objeto[propiedad]}`);
+    delete objeto[propiedad];
+  } else {
+    console.log(`La propiedad "${propiedad}" no existe en el objeto.`);
+  }
+  return objeto;
+}
+
+console.log(eliminarPropiedad(persona, "mail"));
