@@ -6,7 +6,10 @@ let persona = {
 };
 
 function eliminarPropiedad(objeto, propiedad) {
-  if (objeto.hasOwnProperty(propiedad)) { // Verifica si la propiedad existe
+  // El parámetro "propiedad" es una propiedad del objeto que recibes.
+  // Debes eliminarla del objeto y retornarlo finalmente.
+  // Tu código:
+  if (objeto.hasOwnProperty(propiedad)) { 
     console.log(`Propiedad eliminada: ${propiedad}, Valor: ${objeto[propiedad]}`);
     delete objeto[propiedad];
   } else {
