@@ -1,0 +1,19 @@
+let persona = {
+  nombre: "Nicolas",
+  apellido: "Morales",
+  dni: 37234793,
+  mail: "nico@gmail.com",
+  password: "1234",
+  amigos: ["cuchy", "lea", "joni", "marce"]
+};
+
+function agregarAmigo(objetoUsuario, nuevoAmigo) {
+  // El parámetro "objetoUsuario" tiene una propiedad llamada "amigos" igual a un arreglo.
+  // Debes agregar el "nuevoAmigo" al final de este arreglo.
+  // Retornar el objeto.
+  // Tu código:
+  objetoUsuario.amigos.push(nuevoAmigo)
+  return persona
+}
+
+console.log(agregarAmigo(persona, "matu"))
