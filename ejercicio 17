@@ -1,0 +1,17 @@
+let persona = {
+  nombre: "Nicolas",
+  apellido: "Morales",
+  dni: 37234793,
+  mail: "nico@gmail.com",
+  password: "1234"
+};
+
+function actualizarPassword(objetoUsuario, nuevaPassword) {
+  // Reemplaza la contraseña guardada en la propiedad "password" del "objetoUsuario".
+  // La nueva contraseña la recibes por parámetro.
+  // Retornar el objeto.
+  // Tu código:
+  objetoUsuario.password = nuevaPassword
+  return objetoUsuario
+}
+console.log(actualizarPassword(persona, "a1234o"))
